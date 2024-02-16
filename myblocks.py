@@ -3,19 +3,6 @@ import random
 import math
 from util import GRID
 
-# ASSIGNMENT #4
-# Write this function to solve the blocks world puzzles
-# DO NOT change the function name SOLVE
-# DO NOT change the input parameters of SOLVE
-# DO NOT change anything in the util module or the main file
-# The output of SOLVE must be a list of tuple pairs [(block to move, location to move to),...]
-#       location to move to = either another block or -> "Table" or " Table" (both the same thing)
-#       hint: you can use " Table" instead of "Table" to get a desired sorting order
-# To test, run main.py
-# Your solutions must be in the optimal number of steps, not just correct for full credit
-# The code (all tests combined) must complete in under 1 second on Google Colab for full credit
-# Zip this entire project (not just this file) and submit to Moodle
-
 def SOLVE(initial, goal):
     def GetPossibleMoves(state, goal): # Evaluation Function
         def GetPreviousBlock(block, goal):
